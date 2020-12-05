@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  margin: 0 !important;
+}
+
+body {
+  background-image: repeating-linear-gradient(
+      135deg,
+      rgba(172, 176, 216, 0.08) 0px,
+      rgba(172, 176, 216, 0.08) 1px,
+      transparent 1px,
+      transparent 9px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(172, 176, 216, 0.08) 0px,
+      rgba(172, 176, 216, 0.08) 1px,
+      transparent 1px,
+      transparent 9px
+    ),
+    linear-gradient(90deg, rgb(183, 70, 156), rgb(8, 33, 155));
+}
+
+.user-div:hover {
+  background-color: gainsboro;
+}
+
+.messages-box {
+  height: 500px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.messages-box::-webkit-scrollbar {
+  display: none;
+}
+
+.user-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.info-text {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transform: translateY(-0.5rem);
+}
+.react-icon-button {
+  padding: 0 0.25rem 0 0.25rem !important;
+  transition: 0.3s ease-out;
+}
+.react-icon-button:hover {
+  text-decoration: none !important;
+  transform: scale(1.1);
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.reactions {
+  position: absolute;
+  right: -10px;
+  bottom: -25px;
+  font-size: 0.9rem;
+}
